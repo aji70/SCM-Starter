@@ -26,7 +26,7 @@ contract Assessment {
         require(msg.sender == owner, "You are not the owner of this account");
 
         // perform transaction
-        balance += _amount
+        balance += _amount;
 
         // assert transaction completed successfully
         assert(balance == _previousBalance + _amount);
